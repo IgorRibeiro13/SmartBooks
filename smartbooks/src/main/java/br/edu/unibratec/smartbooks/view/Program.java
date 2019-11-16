@@ -1,16 +1,18 @@
 package br.edu.unibratec.smartbooks.view;
 
-
+import br.edu.unibratec.smartbooks.controller.BookOperationsFacade;
 
 public class Program {
 
 	public static void main(String[] args) {
 
-
-		// criar uma facade para pegar os dados e chamar o controller, no controller
-		// validar os dados.K
-
-
+		BookOperationsFacade facade = BookOperationsFacade.getInstancia();
+		
+		OperationsView program = new OperationsView();
+		
+		int opcao = program.menu();
+		
+		program.opcoesMenu(opcao);
 
 	}
 

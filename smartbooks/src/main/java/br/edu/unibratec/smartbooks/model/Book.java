@@ -16,15 +16,8 @@ public class Book {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	private String titulo, autor, editora, url, tamanho, ano, tipo;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
+	private String titulo, autor, editora, url, tipo;
+	private int ano, tamanho;
 
 	public String getTitulo() {
 		return titulo;
@@ -58,22 +51,6 @@ public class Book {
 		this.url = url;
 	}
 
-	public String getTamanho() {
-		return tamanho;
-	}
-
-	public void setTamanho(String tamanho) {
-		this.tamanho = tamanho;
-	}
-
-	public String getAno() {
-		return ano;
-	}
-
-	public void setAno(String ano) {
-		this.ano = ano;
-	}
-
 	public String getTipo() {
 		return tipo;
 	}
@@ -81,5 +58,30 @@ public class Book {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
+
+	public int getAno() {
+		return ano;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+
+	public int getTamanho() {
+		return tamanho;
+	}
+
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 
 }
